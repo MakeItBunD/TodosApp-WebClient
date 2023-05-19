@@ -29,7 +29,7 @@ export const todosAPI = createApi({
       invalidatesTags: ['todo'],
     }),
     updateTodo: build.mutation({
-      query: (body: { _id: string, title: string }) => ({
+      query: (body: { _id: string, title: string, isCompleted: boolean }) => ({
         method: 'PUT',
         url: `/todos/${body._id}`,
         body,

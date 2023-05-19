@@ -16,6 +16,10 @@ body {
   background: transparent !important;
 }
 
+.ant-list-item-meta-title {
+  margin-bottom: 0 !important;
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 10px;

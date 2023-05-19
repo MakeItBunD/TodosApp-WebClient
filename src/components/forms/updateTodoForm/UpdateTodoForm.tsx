@@ -23,7 +23,7 @@ function UpdateTodoForm({ item, onClick, onError }: UpdateTodoFormProps) {
   };
 
   const updateHandler = async () => {
-    await updateTodo({ _id: item._id, title: value });
+    await updateTodo({ _id: item._id, title: value, isCompleted: item.isCompleted });
     onClick();
   };
 
